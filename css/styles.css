@@ -1,0 +1,460 @@
+
+/* основний колір тексту #212121*/
+/* вторинний колір тексту #757575 */
+/* акцент #2196F3 */
+/* основна заливка #F5F5F5 */
+/* додаткова заливка #F5F4FA */
+/* заливка футера (банера) 2F303A */
+/* білий #FFFFFF */
+/* чоний #000000 */
+/* контакти в футері rgba(255, 255, 255, 0.6) */
+
+
+
+:root {
+    --primery-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --primery-bcg-color: #F5F5F5;
+    --secondary-bcg-color: #F5F4FA;
+    --footer-bcg-color: #2F303A;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --main-white-color: #FFFFFF;
+    --main-black-color: #000000;
+    --border-color: #EEEEEE;
+    --border-header: #ECECEC;
+}
+
+body {
+    color: var(--primery-text-color);
+    background-color: var(--primery-bcg-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 370px;
+    height: auto;
+}
+
+/* Шапка сайту */
+
+.header {
+    background-color: var(--main-white-color);
+    border-bottom: 1px solid var(--border-header);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Лого */
+
+.logo {
+    color: var(--main-black-color);
+    font-family: Raleway, cursive;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none; 
+
+    margin-right: 93px;
+}
+
+.logo .accent {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+/* Навігація по сайту */
+
+.nav-link {
+    color:  var(--primery-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav {
+    list-style: none;
+}
+
+/* Контакти */
+.header-contacts {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    line height: 1.14;
+    letter spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent-color);
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Герой */
+/* макс відз для тексту  */
+.hero {
+    color: var(--main-white-color);
+    background-color: var(--footer-bcg-color);
+
+    letter spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 30px;
+
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero-button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    text-align: center;
+    border: 1px solid transparent;
+
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--footer-text-color);
+}
+
+/* Переваги */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefits .container {
+    display: flex;
+}
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-subject {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+.benefits-title {
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+.benefits-text {
+    color: var(--title-text-color);   
+    max-width: 270px; 
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/* Діяльність */
+
+
+.activity-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.activity-list {
+    display: flex;
+    list-style: none;
+}
+
+.activity-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Команда */
+
+.team {
+    background-color: var(--secondary-bcg-color);
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    margin-bottom: 94px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    margin-top: 30px;    
+    margin-bottom: 10px;
+}
+
+.team-desc {
+    color: var(--title-text-color);
+    font-weight: 400;
+}
+
+.team-list {
+    display: flex;
+    list-style: none;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--footer-bcg-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    color: var(--main-white-color);
+    font-family: Raleway, cursive;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-logo .accent {
+    color: var(--accent-color);
+}
+
+.location {
+    color: var(--main-white-color);
+    font-style: normal;
+}
+
+.footer-contacts {
+    color: var(--footer-text-color);
+
+    text-decoration: none;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+
+/* Портфоліо */
+
+.portfolio-caption {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+
+
+.portfolio-button {
+    background-color: var(--secondary-bcg-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+
+    border-radius: 4px;
+    padding: 6px 22px;
+    
+    text-align: center;
+    border: 1px solid transparent;
+    min-width: 73px;
+
+} 
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--secondary-bcg-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-groups:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.portfolio-desc {
+    color: var(--title-text-color);
+
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.portfolio-list {
+    
+    list-style: none;
+}
+
+.portfolio-examples {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-sample {
+    border-bottom: 1px solid var(--border-color);
+}
