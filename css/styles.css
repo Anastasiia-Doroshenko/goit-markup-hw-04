@@ -87,13 +87,15 @@ img {
     align-items: center;
 }
 
-.nav-header {
+.nav-header { 
+    /* вся навігація з лого */
     display: flex;
     align-items: center;
     margin-right: auto;
 }
 
 .site-nav {
+    /* ул навігації */
     display: flex;
     align-items: center;
 }
@@ -165,10 +167,21 @@ img {
     letter spacing: 0.02em;
 
     text-decoration: none;
+    display: flex;
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts:hover .icone {
+    fill: var(--accent-color);
+}
+.contacts:hover {
+    color: var(--accent-color);
+}
+
+.contacts:hover .icone {
+    fill: var(--accent-color);
+}
+
+.contacts:hover {
     color: var(--accent-color);
 }
 
@@ -176,8 +189,16 @@ img {
     margin-right: 50px;
 }
 
+.icone {
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    fill: #757575;
+}
+
 /* Герой */
-/* макс відз для тексту  */
+
 .hero {
     color: var(--main-white-color);
     background-color: var(--footer-bcg-color);
@@ -278,6 +299,19 @@ img {
     margin-right: 30px;
 }
 
+.benefit-rectagle {
+    width: 270px;
+    height: 120px;
+    background: var(--secondary-bcg-color);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
 
 /* Діяльність */
 
@@ -345,7 +379,72 @@ img {
     background-color: var(--main-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
 
+.taem-socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 32px 30px;
+    /* background: var(--main-white-color); */
+}
+
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    fill: #afb1b8;
+
+}
+
+ .team-link:hover,
+ .team-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--main-white-color);
+}
+
+/* Постійні клієнти */
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    
+    fill: #afb1b8;
+}
+
+.customer-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /* Футер */
@@ -366,6 +465,7 @@ img {
     line-height: 1.19;
     text-decoration: none;
     display: inline-block;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -384,11 +484,59 @@ img {
     text-decoration: none;
 }
 
-.footer-list {
+.footer-contacts {
     list-style: none;
 }
 
+.footer-title {
+    color: var(--main-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 72px;
+    margin-bottom: 20px;
+}
 
+.footer .container {
+    display: flex;
+}
+.footer-adress {
+    margin-right: 70px;
+}
+
+.footer-socialmedia {
+    display: flex;
+}
+
+.footer-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--main-white-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    fill: var(--main-white-color);
+    background-color: var(--accent-color);
+}
+
+
+
+
+/* margin-right: 70px */
 /* Портфоліо */
 
 .portfolio-caption {
