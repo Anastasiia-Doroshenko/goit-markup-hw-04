@@ -177,17 +177,19 @@ img {
     color: var(--accent-color);
 }
 
-.contacts:hover .icone {
+.contacts:focus .icone {
     fill: var(--accent-color);
 }
 
-.contacts:hover {
+.contacts:focus {
     color: var(--accent-color);
 }
 
 .contact-item:not(:last-child) {
     margin-right: 50px;
 }
+
+
 
 .icone {
     margin-right: 10px;
